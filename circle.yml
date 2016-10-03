@@ -2,6 +2,9 @@ test:
   pre:
     - curl -L https://cpanmin.us | perl - --sudo App::cpanminus
     - sudo cpanm Carton
+    - perl -v
+    - cpanm -v
+    - carton -v
     - make
   override:
     - make test
