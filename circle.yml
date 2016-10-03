@@ -1,5 +1,7 @@
 test:
   pre:
+    - curl -L https://cpanmin.us | perl - --sudo App::cpanminus
+    - sudo cpanm Carton
     - make
   override:
     - make test
