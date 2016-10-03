@@ -3,7 +3,7 @@ test:
     - curl -L https://cpanmin.us | perl - --sudo App::cpanminus
     - sudo cpanm Carton
     - perl -v
-    - cpanm -v
+    - cpanm --version
     - carton -v
     - make
   override:
